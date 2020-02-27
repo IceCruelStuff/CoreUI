@@ -1,6 +1,6 @@
 # CoreUI
 
-- A MiniCoreUI by TheRealAlex
+- A MiniCoreUI by DaRealAqua
 
 # Plugin Sneak Peak.
 - Fly on
