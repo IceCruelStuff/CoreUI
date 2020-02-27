@@ -99,19 +99,19 @@ class Main extends PluginBase implements Listener {
             
             });
             $form->setTitle(TextFormat::BOLD. TextFormat::LIGHT_PURPLE."CORE");
-			$form->setContent(TextFormat::GRAY"Author: AlexItz16");
-                        $form->addButton("§l§eFly on\n§r§o§7Tap for Activate Fly");
-			$form->addButton("§l§eFly off\n§r§o§7Tap for Disable Fly");
-			$form->addButton("§l§6Heal\n§r§o§7Tap for Heal");
-			$form->addButton("§l§6Feed\n§r§o§7Tap for Eat");
-			$form->addButton("§l§bCreative\n§r§o§7Tap to change GM");
-			$form->addButton("§l§bAdventure\n§r§o§7Tap to change GM");
-			$form->addButton("§l§bSpectator\n§r§o§7Tap to change GM");
-	     		$form->addButton("§l§bVanish on\n§r§o§7press for Activate Vanish");
-	    		$form->addButton("§l§bVanish off\n§r§o§7Press for Disable Vanish");
-	    		$form->addButton("§l§5Plugins\n§r§o§7Show Server plugins");
+			$form->setContent(TextFormat::GRAY."Author: AlexItz16\n".TextFormat::GRAY,"Version: 0.0.2");
+                        $form->addButton(TextFormat::GRAY."Enable Fly\n".TextFormat::LIGHT_PURPLE."Tap for Activate Fly");
+			$form->addButton(TextFormat::GRAY."Dezactive Fly\n".TextFormat::LIGHT_PURPLE."Tap for Disable Fly");
+			$form->addButton(TextFormat::GRAY."Heal\n".TextFormat::LIGHT_PURPLE."Tap for Heal");
+			$form->addButton(TextFormat::GRAY."Feed\n".TextFormat::LIGHT_PURPLE."Tap for Eat");
+			$form->addButton(TextFormat::GRAY."Creative\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+			$form->addButton(TextFormat::GRAY."Adventure\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+			$form->addButton(TextFormat::GRAY."Spectator\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+	     		$form->addButton(TextFormat::GRAY."Vanish on\n".TextFormat::LIGHT_PURPLE."Press for Activate Vanish");
+	    		$form->addButton(TextFormat::GRAY."Vanish off\n".TextFormat::LIGHT_PURPLE."Press for Disable Vanish");
+	    		$form->addButton(TextFormat::GRAY."Plugins\n".TextFormat::LIGHT_PURPLE."Show Server plugins");
 			
-            $form->addButton("§l§6CLOSE");
+            $form->addButton(TextFormat::RED."Close");
             $form->sendToPlayer($sender);
             return $form;                                            
     }
