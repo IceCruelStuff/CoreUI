@@ -99,7 +99,7 @@ class Main extends PluginBase implements Listener {
             
             });
             $form->setTitle(TextFormat::BOLD. TextFormat::LIGHT_PURPLE."CORE");
-			$form->setContent(TextFormat::GRAY."Author: AlexItz16\n".TextFormat::GRAY,"Version: 0.0.2");
+			$form->setContent(TextFormat::GRAY."Author: DaRealAqua\n".TextFormat::GRAY,"Version: 0.0.2");
                         $form->addButton(TextFormat::GRAY."Enable Fly\n".TextFormat::LIGHT_PURPLE."Tap for Activate Fly");
 			$form->addButton(TextFormat::GRAY."Dezactive Fly\n".TextFormat::LIGHT_PURPLE."Tap for Disable Fly");
 			$form->addButton(TextFormat::GRAY."Heal\n".TextFormat::LIGHT_PURPLE."Tap for Heal");
