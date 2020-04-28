@@ -52,47 +52,47 @@ class Main extends PluginBase implements Listener {
             }             
             switch($result){
                 case 0:
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Enabled flight mode!", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Enabled flight mode!");
             $sender->setAllowFlight(true);
                 break;
                 case 1:
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Disabled flight mode!", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Disabled flight mode!");
             $sender->setAllowFlight(false);
                 break;				
                 case 2:
             $sender->setHealth(20);
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Your has ben Healed", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Your has ben Healed");
                 break;  
                 case 3:
             $sender->setFood(20);
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "You have been feed!", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "You have been feed!");
                 break;  
                 case 4:
             $sender->setGameMode(1);
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Creative", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Creative");
                 break;
                 case 5:
             $sender->setGameMode(2);
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Adventure", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Adventure");
                 break;
                 case 6:
             $sender->setGameMode(3);
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Spectator", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "GameMode changed to §9Spectator");
                 break;			
 		case 7:
             $sender->addEffect(new EffectInstance(Effect::getEffect(Effect::INVISIBILITY), 99999999, 0, false));
-            $sender->addTitle(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Vanish Enabled", 20, 20, 20);
+            $sender->addTitle(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Vanish Enabled");
                 break;		    
 		case 8:
             $sender->removeEffect(Effect::INVISIBILITY);
-            $sender->addTitle(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Vanish Enabled", 20, 20, 20);
+            $sender->addTitle(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "Vanish Disabled");
 		break;	    
 		case 9:
             $command = "pl" ;
             $this->getServer()->getCommandMap()->dispatch($sender, $command);
 		break;	     
                 case 10:
-            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "CoreUI Closed", 20, 20, 20);
+            $sender->sendMessage(TextFormat::LIGHT_PURPLE."(CORE) ". TextFormat::YELLOW . "CoreUI Closed");
                 break;				
             }
             
