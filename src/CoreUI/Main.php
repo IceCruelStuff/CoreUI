@@ -98,21 +98,20 @@ class Main extends PluginBase implements Listener {
             
             
             });
-            $form->setTitle(TextFormat::BOLD. TextFormat::LIGHT_PURPLE."CORE");
-			$form->setContent(TextFormat::GRAY."Author: DaRealAqua\n".TextFormat::GRAY."Version: 0.0.2");
-                        $form->addButton(TextFormat::GRAY."Enable Fly\n".TextFormat::LIGHT_PURPLE."Tap for Activate Fly");
-			$form->addButton(TextFormat::GRAY."Dezactive Fly\n".TextFormat::LIGHT_PURPLE."Tap for Disable Fly");
-			$form->addButton(TextFormat::GRAY."Heal\n".TextFormat::LIGHT_PURPLE."Tap for Heal");
-			$form->addButton(TextFormat::GRAY."Feed\n".TextFormat::LIGHT_PURPLE."Tap for Eat");
-			$form->addButton(TextFormat::GRAY."Creative\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
-			$form->addButton(TextFormat::GRAY."Adventure\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
-			$form->addButton(TextFormat::GRAY."Spectator\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
-	     		$form->addButton(TextFormat::GRAY."Vanish on\n".TextFormat::LIGHT_PURPLE."Press for Activate Vanish");
-	    		$form->addButton(TextFormat::GRAY."Vanish off\n".TextFormat::LIGHT_PURPLE."Press for Disable Vanish");
-	    		$form->addButton(TextFormat::GRAY."Plugins\n".TextFormat::LIGHT_PURPLE."Show Server plugins");
-			
-            $form->addButton(TextFormat::RED."Close");
-            $form->sendToPlayer($sender);
+            	$form->setTitle(TextFormat::BOLD. TextFormat::LIGHT_PURPLE."CORE");
+		$form->setContent(TextFormat::GRAY."Author: DaRealAqua\n".TextFormat::GRAY."Version: 0.0.2");
+                $form->addButton(TextFormat::GRAY."Enable Fly\n".TextFormat::LIGHT_PURPLE."Tap for Activate Fly");
+		$form->addButton(TextFormat::GRAY."Dezactive Fly\n".TextFormat::LIGHT_PURPLE."Tap for Disable Fly");
+		$form->addButton(TextFormat::GRAY."Heal\n".TextFormat::LIGHT_PURPLE."Tap for Heal");
+		$form->addButton(TextFormat::GRAY."Feed\n".TextFormat::LIGHT_PURPLE."Tap for Eat");
+		$form->addButton(TextFormat::GRAY."Creative\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+		$form->addButton(TextFormat::GRAY."Adventure\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+		$form->addButton(TextFormat::GRAY."Spectator\n".TextFormat::LIGHT_PURPLE."Tap to change GM");
+	     	$form->addButton(TextFormat::GRAY."Vanish on\n".TextFormat::LIGHT_PURPLE."Press for Activate Vanish");
+	    	$form->addButton(TextFormat::GRAY."Vanish off\n".TextFormat::LIGHT_PURPLE."Press for Disable Vanish");
+	    	$form->addButton(TextFormat::GRAY."Plugins\n".TextFormat::LIGHT_PURPLE."Show Server plugins");	
+            	$form->addButton(TextFormat::RED."Close");
+            	$form->sendToPlayer($sender);
             return $form;                                            
     }
  
